@@ -1,0 +1,15 @@
+To install this, make sure that you have the linux-headers installed. Then
+
+sudo make
+sudo make install
+modprobe pIIIcache
+
+then add a line 
+
+pIIIcache 
+
+in your /etc/modules file so that this modules is loaded automatically at boot
+
+If you suspend or hibernate your laptop, you must remove and reload the module. 
+Find which script does it for your particular linux distribution 
+
